@@ -1,0 +1,15 @@
+footer {
+    border: 1px solid;
+    height: 100px;
+    margin-top: 10px;
+    background: slategray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    width:25%;
+    margin: 0 auto;
+}
