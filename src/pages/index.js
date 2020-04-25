@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Title from "../components/Title"
 
 export default () => (
   <Layout>
-    <h1>Home - Page</h1>
+    <Title title="Home" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ad vero?
       Magni autem ex velit soluta inventore error totam molestiae minus sapiente
