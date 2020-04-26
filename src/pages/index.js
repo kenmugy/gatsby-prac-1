@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
+import 'materialize-css/dist/css/materialize.min.css'
 
 export default () => (
   <Layout>

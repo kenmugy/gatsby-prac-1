@@ -1,17 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./navbar.module.css"
 
-const Logo = ({ to, text }) => <Link to={to}>{text}</Link>
+const Logo = ({ to, text }) => <Link className="brand-logo left" to={to}>{text}</Link>
 const NavLinks = ({ to, text }) => <Link to={to}>{text}</Link>
 
 export default () => (
-  <nav>
-    <Logo to="/" text="LOGO" />
-    <div className={styles.navlinks}>
-      <NavLinks to="/" text="Home" />
-      <NavLinks to="/about" text="About" />
-      <NavLinks to="/more" text="More" />
+  <nav className="green z-depth-0">
+    <div className="container nav-wrapper">
+      <Logo to="/" text="BooG" />
+      <ul className="right">
+        <li>
+          <NavLinks to="/" text="Home" />
+        </li>
+        <li>
+          <NavLinks to="/about" text="About" />
+        </li>
+        <li>
+          <NavLinks to="/more" text="More" />
+        </li>
+      </ul>
     </div>
   </nav>
 )
