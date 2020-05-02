@@ -6,8 +6,7 @@ export default ({ children }) => (
   <main>
     <Navbar />
     <div className="container">{children}</div>
-    <Footer >
-        kenmugy 2020
-    </Footer>
+    
+    <Footer/>
   </main>
 )

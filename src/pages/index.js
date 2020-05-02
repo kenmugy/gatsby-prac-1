@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Title from "../components/Title"
+import Header from "../components/Header"
 import 'materialize-css/dist/css/materialize.min.css'
 
 export default () => (
   <Layout>
-    <Title title="Home" />
+    <Header title="Hello" emoji="⛪" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ad vero?
       Magni autem ex velit soluta inventore error totam molestiae minus sapiente
