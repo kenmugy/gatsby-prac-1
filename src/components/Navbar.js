@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styles from './navbar.module.scss'
 
 const Logo = ({ to, text }) => <Link className="brand-logo left" to={to}>{text}</Link>
 
@@ -8,17 +9,17 @@ export default () => (
     <div className="container nav-wrapper">
       <Logo to="/" text="BlooG" />
       <ul className="right">
-      <li>
-        <Link to="/">Home</Link>
+      <li >
+        <Link to="/" activeClassName={styles.active}>Home</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" activeClassName={styles.active}>About</Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/blog" activeClassName={styles.active}>Blog</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" activeClassName={styles.active}>Contact</Link>
       </li>
       </ul>
     </div>
